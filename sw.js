@@ -1,7 +1,7 @@
 /* ครูชีต — service worker (ให้ติดตั้งเป็นแอปได้ + เปิดได้แม้เน็ตหลุด)
- * /krusheet-app / 98200f2a613695e350892ff7834c214f ถูกแทนค่าโดย scripts/fix-web-dist.js ตอน build */
+ * /krusheet-app / 488f81d91116869895c555aa58291959 ถูกแทนค่าโดย scripts/fix-web-dist.js ตอน build */
 const BASE = '/krusheet-app';
-const CACHE = 'krusheet-98200f2a613695e350892ff7834c214f';
+const CACHE = 'krusheet-488f81d91116869895c555aa58291959';
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll([BASE + '/', BASE + '/manifest.webmanifest'])).then(() => self.skipWaiting()));
